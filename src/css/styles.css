@@ -1,0 +1,32 @@
+body {
+    margin: 0 
+}
+
+header {
+    background: blue;
+    text-align:center; 
+}
+
+.logo{
+    color:#fff; 
+    font-size:40px; 
+    font-family:'Anton'
+}
+
+header input{
+    font-size:20px;
+    margin:20px 0;
+}
+
+.non-active{
+    background-color:'purple'
+}
+
+.active{
+    background-color:'red'
+}
+
+.news_item{
+    background:'green'
+}
+
