@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 
-import '../css/styles.css';
+import classes from '../css/styles.css';
 
 // const getYear = () => {
 
@@ -17,38 +17,38 @@ const user = {
 }; 
 
 
-class Header extends Component{
+const Header = (props) => {
 
-    state = {
+    // state = {
        
-       keywords: ''
-    }; 
+    //    keywords: ''
+    // }; 
 
     
 
-    inputChangeHandler(event){
+    // inputChangeHandler(event){
        
-        this.setState({
+    //     this.setState({
             
-            keywords: event.target.value
-        });
-    }
+    //         keywords: event.target.value
+    //     });
+    // }
 
     
 
-    render(){
+   
         
         
         return (
             <header  >
-                <div className="logo"
+                <div className={classes.logo}
                     onClick = { ()=> {
                         console.log("I was clicked");
                     }}
                 
                 >Logo</div>
                 <input type="text" onChange={ 
-                    this.inputChangeHandler.bind(this)
+                    props.keywords
                  }
                  />
                  
@@ -57,7 +57,7 @@ class Header extends Component{
         )
     }
 
-}
+
 
 
 

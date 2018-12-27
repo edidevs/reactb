@@ -19,14 +19,17 @@ header input{
 }
 
 .non-active{
-    background-color:'purple'
+    background-color:purple 
 }
 
 .active{
-    background-color:'red'
+    background-color:red
 }
 
 .news_item{
-    background:'green'
+    background:yellow;
+    padding:20px;
+    box-sizing:border-box;
+    border-bottom:1px solid grey; 
 }
 
